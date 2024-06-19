@@ -1,0 +1,463 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.slide-container {
+  max-width: 1120px;
+  width: 100%;
+  background-color: black;
+  padding: 40px 0;
+}
+
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 14px;
+  gap: 0.8em;
+  align-items: center;
+}
+
+.card {
+  border-radius: 10px;
+  background-color: black;
+  display: flex !important;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+}
+
+.slide-content {
+  margin: 0 40px;
+  padding: 45px 20px;
+  background-color: black;
+  overflow: hidden;
+  border-radius: 25px;
+}
+/* .card-image:hover {
+  transform: rotateY(180deg);
+} */
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.card-image {
+  position: relative;
+  padding-left: 2.75rem;
+  width: 200px;
+  height: 280px;
+  padding: 3px;
+  /* transition: transform 1500ms; */
+}
+
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+rating-card {
+  display: flex;
+  align-items: center;
+}
+
+.fa-star {
+  color: #f5c518;
+  font-size: 15px;
+  margin-right: 5px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.rating {
+  display: inline-block;
+  font-size: 17px;
+  color: #f5c518;
+  color: white;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.fa-regular {
+  color: skyblue;
+  padding: 0px 40px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.fa-regular:hover {
+  color: #f5c518;
+}
+.card button {
+  background-color: #ffffff14;
+  display: flex;
+  direction: column;
+  align-items: center;
+  padding-left: 3.75rem;
+  border-radius: 30px grey;
+  color: #5799ef;
+  /* height: 35px;
+  width: 185px; */
+  padding: 8px 36px;
+  border: -349px;
+
+  border: 67px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+.btn {
+  display: flex;
+  margin-top: 1em;
+  gap: 0.2em;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card button:hover {
+  background: #2a252514;
+  box-shadow: -4px -4px 12px;
+}
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 280px;
+  border: 1px #f1f1f1;
+  perspective: 1000px;
+  user-select: none;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: whitesmoke;
+  color: white;
+  transform: rotateY(180deg);
+  background-color: #624613;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.additional-sultan {
+  color: whitesmoke;
+  font-size: 13px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  /* background-color: #a5582c; */
+  background-color: #624613;
+  height: 100%;
+  width: 100%;
+  padding-top: 75px;
+}
+
+.capsules {
+  padding: 5px;
+}
+.capsules span {
+  border: 2px solid white;
+  color: white;
+  border-radius: 10px;
+  padding: 4px;
+  font-size: 10px;
+  background-color: #b48734;
+  padding: 3px;
+}
+
+.additional-Dhoom2 {
+  color: #393546;
+  font-size: 13px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  background-color: #00adb5;
+  height: 100%;
+  width: 100%;
+  padding-top: 75px;
+}
+.additional-Rabnebanadijodi {
+  color: white;
+  font-size: 13px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  background: linear-gradient(90deg, #ff0844, #ffb199);
+  height: 100%;
+  width: 100%;
+  padding-top: 75px;
+}
+.additional-BnB {
+  color: #393e46;
+  font-size: 13px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  background-color: #fd7014;
+  height: 100%;
+  width: 100%;
+  padding-top: 75px;
+}
+.additional-salaam-namste {
+  color: whitesmoke;
+  font-size: 13px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  /* background-color: rgb(83, 19, 83); */
+  background-color: #ff0000;
+  height: 100%;
+  width: 100%;
+  padding-top: 75px;
+}
+.additional-veer-zara {
+  color: yellow;
+  font-size: 13px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  /* background-color: rgb(83, 19, 83); */
+  background: linear-gradient(45deg, yellow, black);
+  height: 100%;
+  width: 100%;
+  padding-top: 75px;
+}
+.additional-Hum-Tum {
+  color: black;
+  font-size: 13px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  background: linear-gradient(45deg, #4facfe, #00f2fe, #6dd5fa);
+  height: 100%;
+  width: 100%;
+  padding-top: 75px;
+}
+.additional-TZH {
+  color: whitesmoke;
+  font-size: 13px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  background: linear-gradient(45deg, #9e7369);
+  height: 100%;
+  width: 100%;
+  padding-top: 75px;
+}
+.additional-fanaa {
+  color: whitesmoke;
+  font-size: 13px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  background: linear-gradient(45deg, #1488cc, #2b32b2);
+  height: 100%;
+  width: 100%;
+  padding-top: 75px;
+}
+.additional-BAH {
+  color: black;
+  font-size: 13px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  background-color: whitesmoke;
+  height: 100%;
+  width: 100%;
+  padding-top: 75px;
+}
+.capsules1 {
+  padding: 5px;
+}
+.capsules1 span {
+  border: 2px solid white;
+  color: white;
+  border-radius: 10px;
+  padding: 4px;
+  font-size: 10px;
+  background-color: #00adb5;
+  padding: 3px;
+}
+.capsules2 {
+  padding: 5px;
+}
+.capsules2 span {
+  border: 2px solid skyblue;
+  color: white;
+  border-radius: 10px;
+  padding: 4px;
+  font-size: 10px;
+  background: linear-gradient(90deg, #ff0844, #ffb199);
+  padding: 3px;
+}
+.capsules3 {
+  padding: 5px;
+}
+.capsules3 span {
+  border: 2px solid #393e46;
+  color: whitesmoke;
+  border-radius: 10px;
+  padding: 4px;
+  font-size: 10px;
+  background-color: #fd7014;
+  padding: 3px;
+}
+.capsules4 {
+  padding: 5px;
+}
+.capsules4 span {
+  border: 2px solid greenyellow;
+  color: greenyellow;
+  border-radius: 10px;
+  padding: 4px;
+  font-size: 10px;
+  background-color: #ff0000;
+  padding: 3px;
+}
+.capsules5 {
+  padding: 5px;
+}
+.capsules5 span {
+  border: 2px solid yellow;
+  color: yellow;
+  border-radius: 10px;
+  padding: 4px;
+  font-size: 10px;
+  background-color: black;
+  padding: 3px;
+}
+.capsules6 {
+  padding: 5px;
+}
+.capsules6 span {
+  border: 2px solid whitesmoke;
+  color: white;
+  border-radius: 10px;
+  padding: 4px;
+  font-size: 10px;
+  background-color: #4facfe;
+  padding: 3px;
+}
+.capsules7 {
+  padding: 5px;
+}
+.capsules7 span {
+  border: 2px solid whitesmoke;
+  color: white;
+  border-radius: 10px;
+  padding: 4px;
+  font-size: 10px;
+  background: linear-gradient(45deg, #b79891, #94716b);
+  padding: 3px;
+}
+.capsules8 {
+  padding: 5px;
+}
+.capsules8 span {
+  border: 2px solid whitesmoke;
+  color: white;
+  border-radius: 10px;
+  padding: 4px;
+  font-size: 10px;
+  background: linear-gradient(45deg, #1488cc, #2b32b2);
+  padding: 3px;
+}
+.capsules9 {
+  padding: 5px;
+}
+.capsules9 span {
+  border: 2px solid whitesmoke;
+  color: white;
+  border-radius: 10px;
+  padding: 4px;
+  font-size: 10px;
+  background-color: skyblue;
+  padding: 3px;
+}
+.name {
+  font-size: 19px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: whitesmoke;
+}
+.fa-play {
+  margin-left: -16px;
+  margin-right: 9px;
+  margin-top: 1px;
+  font-size: 15px;
+  color: whitesmoke;
+}
+.fa-plus {
+  margin-left: -16px;
+  margin-right: 9px;
+  margin-top: 1px;
+  font-size: 15px;
+}
+
+.swiper-navBtn:hover {
+  color: #5799ef;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::before {
+  font-size: 40px;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-pagination-bullet {
+  background-color: #6e93f7;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: red;
+}
